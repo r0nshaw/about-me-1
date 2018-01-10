@@ -1,0 +1,21 @@
+h1 {
+  font-size: 40px;
+  text-align: center;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+}
+
+#intro {
+  font-size: 20px;
+  text-align: center;
+  margin: 25px;
+}
+
+h2 {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px 50px;
+}
