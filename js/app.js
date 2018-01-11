@@ -9,9 +9,6 @@ var userName = prompt('Hey what\'s your name?');
 var myCars = ['LEXUS', 'NISSAN'];
 var carTries = 6;
 
-console.log('User entered ' + userName);
-alert('Welcome ' + userName + ' we\'re going to play a guessing game. Please respond to the following questions with either a yes or no answer.');
-
 function dotaTime() {
   var ramonDotaTime = prompt('DOTA 2 is one of my favorite games of all time and I\'ve played it alot, do you think I\'ve surpassed the thousand hour mark?').toUpperCase();
   if(ramonDotaTime === 'YES'){
@@ -24,7 +21,6 @@ function dotaTime() {
   }
   console.log(userName + ' answered ' + ramonDotaTime);
 }
-dotaTime();
 
 function dotaSkill() {
   var ramonDotaSkill = prompt('Do you think with that amount of time played that I\'m actually good?').toUpperCase();
@@ -38,9 +34,7 @@ function dotaSkill() {
   }
   console.log(userName + ' answered ' + ramonDotaSkill);
 }
-dotaSkill();
 
-alert('Ok ' + userName + ', on to a different subject. This one is more about me.');
 function travel() {
   var ramonTravel = prompt('Do you think I\'ve traveled over more than 2 countries?').toUpperCase();
   if(ramonTravel === 'YES'){
@@ -53,7 +47,6 @@ function travel() {
   }
   console.log(userName + ' answered ' + ramonTravel);
 }
-travel();
 
 function carsOwned() {
   var ramonCarsOwned = prompt('I love cars so the last two questions are going to be about that. Do you think I\'ve owned over 3 cars?').toUpperCase();
@@ -67,7 +60,6 @@ function carsOwned() {
   }
   console.log(userName + ' answered ' + ramonCarsOwned);
 }
-carsOwned();
 
 function dreamCars() {
   var ramonDreamCars = prompt('Do you think I want to add over 50 cars to my garage?').toUpperCase();
@@ -81,9 +73,6 @@ function dreamCars() {
   }
   console.log(userName + ' answered ' + ramonDreamCars);
 }
-dreamCars();
-
-alert('We\'re almost done. The next two questions will need specific answers instead of yes or no. Let\'s see if you were paying attention to the facts about me');
 
 function ramonCars() {
   for(var m = 0; m < myCars.length; m++) {
@@ -103,7 +92,6 @@ function ramonCars() {
     }
   }
 }
-ramonCars();
 
 function dotaHoursGuess() {
   do {
@@ -122,6 +110,16 @@ function dotaHoursGuess() {
     }
   } while (dotaTries > 0);
 }
-dotaHoursGuess();
 
+console.log('User entered ' + userName);
+alert('Welcome ' + userName + ' we\'re going to play a guessing game. Please respond to the following questions with either a yes or no answer.');
+dotaTime();
+dotaSkill();
+alert('Ok ' + userName + ', on to a different subject. This one is more about me.');
+travel();
+carsOwned();
+dreamCars();
+alert('We\'re almost done. The next two questions will need specific answers instead of yes or no. Let\'s see if you were paying attention to the facts about me');
+ramonCars();
+dotaHoursGuess();
 alert('You have earned ' + points + ' points out of 7.');
